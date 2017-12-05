@@ -86,6 +86,15 @@ public class Server extends JFrame {
             }
         });
 
+        jbtstart.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                flag = true;
+                for(int i=0;i<9;i++)
+                    jbt[i].setEnabled(flag);
+            }
+        });
+
 
 
     }
